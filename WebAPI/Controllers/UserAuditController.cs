@@ -51,7 +51,8 @@ namespace WebAPI.Controllers
                     string username = _authenticationContext.Users.FirstOrDefault(u => u.Id == item.userId).UserName;
                     item.userId = username;
                 }
-                return new { userAudits, fullAccess };
+                var totalItems = userAudits.Count();
+                return new { userAudits, fullAccess , totalItems };
             }
             else
             {
@@ -61,7 +62,8 @@ namespace WebAPI.Controllers
                     string username = _authenticationContext.Users.FirstOrDefault(u => u.Id == item.userId).UserName;
                     item.userId = username;
                 }
-                return new { userAudits, fullAccess };
+                var totalItems = userAudits.Count();
+                return new { userAudits, fullAccess , totalItems };
             }
         }
     }
