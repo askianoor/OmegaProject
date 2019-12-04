@@ -9,5 +9,6 @@ namespace WebAPI.Models
     {
         public string JWT_Secret { get; set; }
         public string Client_URL { get; set; }
+        public string AdminRoleName { get; set; }
     }
 }

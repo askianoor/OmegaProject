@@ -15,5 +15,7 @@ namespace WebAPI.Models
         public string Status { get; set; }
 
         public DateTimeOffset ActionDate { get; set; }
+
+        public string UserName { get; set; }
     }
 }
